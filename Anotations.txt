@@ -1,0 +1,21 @@
+Conceitos aprendidos no projeto
+
+
+
+DDD, Solid - Foram aplicados conceitos de DDD para organizar a estrutura do projeto e um pouco de solid nos códigos.
+CQRS - Para dividir comandas de escrita e leituras
+ command utilizado para entrada de dados
+ 
+FailFastValidations - validar a entrada dos dados diretamente nos commands (CQRS) isso já diminui requests na aplicação porque já valida os dados na fonte
+
+
+Dominios ricos e dominios anemicos - dominios anemicos são classes apenas com os campos mapeados, diferente dos dominios ricos que são classes com ações e funcionalidades
+
+Separação por contextos delimitados - A ideia é criar funcionalidades/projetos especializados em cada area do produto
+
+ValueObjects = basicamente é utilizado para diminuir o conceito de excessive primitive obsession (obsessão por tipos primitivos) e ainda ajuda a centralizar as validações e testes
+
+RepositoryPattern - é uma forma de desaclopar o domain de uma fonte de dados especifica, precisamos apenas que a classe de consulta implemente um interface Repository, ou seja não importa se os dados são do SQLServer, mongo, mysql etc, a classe que implementa o repositorio só precisa garantir o retorno que foi especificado na interface
+
+a implementação dos repositorios fica na camada de infrastrutucre isso garante o isolamento do dominio em questão de base de dados, etc...
+
