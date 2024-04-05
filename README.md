@@ -1,6 +1,6 @@
 # Conceitos Aprendidos no Projeto
 
-Neste projeto, incorporei uma variedade de práticas e padrões de design avançados, fundamentais para a construção de aplicações robustas e escaláveis usando .NET 8. Abaixo estão os conceitos-chave que apliquei:
+Neste projeto, incorporei uma variedade de práticas e padrões de design, fundamentais para a construção de aplicações robustas e escaláveis usando .NET 8. Abaixo estão os conceitos-chave que apliquei:
 
 ## DDD (Domain-Driven Design) e SOLID
 
@@ -10,25 +10,25 @@ Neste projeto, incorporei uma variedade de práticas e padrões de design avanç
 
 ## CQRS (Command Query Responsibility Segregation)
 
-Adotei o padrão CQRS para separar claramente as operações de escrita (comandos) das operações de leitura (queries). Isso não apenas simplificou a complexidade do design, mas também otimizou o desempenho e a escalabilidade da aplicação.
-- **Comandos**: Usei para operações de escrita, facilitando a validação e execução de alterações no domínio.
-- **Manipuladores (Handlers)**: Responsáveis por processar comandos e queries, conectando-se com todo o fluxo da aplicação.
+Adotei o padrão CQRS para separar claramente as operações de escrita (commands) das operações de leitura (queries). Isso não apenas simplificou a complexidade do design, mas também otimizou o desempenho e a escalabilidade da aplicação.
+- **Commands**: Usei para operações de escrita, facilitando a validação e execução de alterações no domínio.
+- **Handlers**: Responsáveis por processar commands e queries, conectando-se com todo o fluxo da aplicação.
 
 ## FailFast Validations
 
-Implementei validações rápidas nos comandos para assegurar que dados inválidos fossem rejeitados logo no início do processo. Isso reduziu o overhead de requisições desnecessárias, melhorando a eficiência da aplicação.
+Implementei FailFast Validations nos Commands para assegurar que dados inválidos fossem rejeitados logo no início do processo. Isso reduziu o overhead de requisições desnecessárias, melhorando a eficiência da aplicação.
 
 ## Domínios Ricos
 
 Um domínio rico é uma abordagem de modelagem onde as entidades e objetos de valor possuem não apenas dados, mas também comportamentos e lógicas de negócio que refletem as complexidades e regras do domínio real que estão representando. Isso contrasta com domínios anêmicos, que contêm apenas dados sem lógica de negócio. A aplicação dessa abordagem permite a criação de sistemas mais robustos, pois a lógica de negócio é encapsulada dentro do domínio, facilitando a manutenção e evolução do software.
 
-## Separação por Contextos Delimitados no Contexto de Pagamentos
+## Separação por Contextos Delimitados
 
-A separação por contextos delimitados é uma técnica chave do Domain-Driven Design que consiste em dividir o sistema em módulos ou subdomínios que são especializados em determinadas áreas do negócio. No caso deste projeto, ele está focado no contexto de pagamentos, significando que todo o desenvolvimento, desde a modelagem do domínio até a implementação de funcionalidades, é especializado em atender as necessidades específicas e complexas associadas a processos de pagamento. Isso permite uma abordagem mais direcionada e eficiente, garantindo que o projeto se mantenha coeso e alinhado com os objetivos de negócio nessa área específica.
+A separação por contextos delimitados é uma técnica chave do Domain-Driven Design que consiste em dividir o sistema em módulos ou subdomínios que são especializados em determinadas áreas do negócio. No caso deste projeto, ele está focado no contexto de pagamentos.
 
 ## Value Objects
 
-Utilizei Value Objects para superar a "obsessão por tipos primitivos" e centralizar validações e lógica relacionada a valores específicos do domínio. Isso aumentou a expressividade do modelo de domínio e reduziu a duplicação de código.
+Utilizei Value Objects para evitar a "obsessão por tipos primitivos" e centralizar validações e lógica relacionada a valores específicos do domínio. Isso aumentou a expressividade do modelo de domínio e reduziu a duplicação de código.
 
 ## Repository Pattern
 
