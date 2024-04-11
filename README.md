@@ -1,6 +1,6 @@
 # Conceitos Aprendidos no Projeto
 
-Neste projeto, incorporei uma variedade de práticas e padrões de design, fundamentais para a construção de aplicações robustas e escaláveis usando .NET 8. Abaixo estão os conceitos-chave que apliquei:
+Neste projeto, incorporei uma variedade de práticas e padrões de design, fundamentais para a construção de aplicações robustas e escaláveis usando .NET 8.
 
 ## DDD (Domain-Driven Design) e SOLID
 
@@ -16,7 +16,7 @@ Adotei o padrão CQRS para separar claramente as operações de escrita (command
 
 ## FailFast Validations
 
-Implementei FailFast Validations nos Commands para assegurar que dados inválidos fossem rejeitados logo no início do processo. Isso reduziu o overhead de requisições desnecessárias, melhorando a eficiência da aplicação.
+Implementei FailFast Validations nos Commands para assegurar que dados inválidos sejam rejeitados logo no início do processo. Isso reduz o overhead de requisições desnecessárias, melhorando a eficiência da aplicação.
 
 ## Domínios Ricos
 
@@ -32,8 +32,8 @@ Utilizei Value Objects para evitar a "obsessão por tipos primitivos" e centrali
 
 ## Repository Pattern
 
-Apliquei o Repository Pattern para desacoplar o domínio das fontes de dados, permitindo que minha lógica de negócio fosse independente da infraestrutura de dados. Isso me deu a flexibilidade de mudar as tecnologias de persistência sem afetar o núcleo do domínio.
+Apliquei o Repository Pattern para desacoplar o domínio das fontes de dados, permitindo que minha lógica de negócio seja independente da infraestrutura de dados. Isso me deu a flexibilidade de mudar as tecnologias de persistência sem afetar o núcleo do domínio.
 
 ## Testes Unitários
 
-- Utilizei o MSTest para validar todas as camadas do projeto, assegurando que cada unidade de código funcionasse como esperado sob diversas condições. Isso foi crucial para manter a qualidade e a estabilidade do sistema ao longo do desenvolvimento.
+- Utilizei o MSTest para validar todas as camadas do projeto, assegurando que cada unidade de código funcione como esperado sob diversas condições. Isso foi crucial para manter a qualidade e a estabilidade do sistema ao longo do desenvolvimento.
